@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batuhan Web</title>
+<style type="text/css">
+body,td,th {
+	color: #0F3;
+	scrollbar-3d-light-color: #FFF;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="css/divenalt.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+<body bgcolor=black>
+<table width="100%" border="1">
+    <tr>
+      <td height="157" bgcolor="#00FF33" colspan="3"><img src="fotolar/wwwwlogo.png" width="322" height="220" />           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%" height="1308"> <ul id="MenuBar1" class="MenuBarVertical">
+        <li><a href="BatuhanTasarim.html">Ana Sayfa</a></li>
+<li><a href="webtasarimii.html">Web Tasarımı</a></li>
+        <li><a href="htmlkomutyapisii.html">HTML Komut Yap&#305;s&#305;</a>        </li>
+        <li><a href="listelemeetiketleri.html">Listeleme Etiketleri </a>        </li>
+        <li><a href="metinduzenleme.html">Metin D&uuml;zenleme Etiketleri</a>        </li>
+        <li><a href="gorunumduzenleme.html">G&ouml;r&uuml;n&uuml;m Düzenleme Etiketleri</a></li>
+        <li><a href="baglantikopru.html">Ba&#287;lant&#305; (K&ouml;pr&uuml;) Olu&#351;turma</a></li>
+        <li><a href="tablolar.html">Tablolar</a>        </li>
+        <li><a href="formlarr.html">Formlar</a>        </li>
+        <li><a href="cerceveler.html">&Ccedil;er&ccedil;eveler</a>        </li>
+        <li><a href="#">Resim/Video Ekleme</a>        </li>
+</ul>
+      </td>
+ <td width="80%" height="1308" valign="top" >
+   <center>
+   <h1>Tablolar   </h1></center>
+   <p><h3>&lt;TABLE&gt;</h3>
+   <p><em>Hazırlamış olduğunuz web sayfanıza tablo eklemek için kullanılan etikettir. Bir tablo &lt;Table&gt; etiketi ile başlayıp &lt;/table&gt; etiketi ile biter. Tablolar satır ve sütunlardan oluşur.  Satırların ve sütunların kesiştikleri kutuya &ldquo;<strong>hücre</strong>&rdquo; adı verilir.</em> </p>
+   <p><em>Aşağıdaki örnekte 1x1&rsquo;lik (1 satır ve 1 sütundan oluşan) bir tablo gösterilmiştir.</em></p>
+  <center> <div>
+     <p>&lt;table border=&quot;2&quot;&gt;<br>
+       &lt;tr&gt;<br>
+       &lt;td&gt;Batuhan&lt;/td&gt;<br>
+       &lt;/tr&gt;<br>
+       &lt;/table&gt;
+     </p>
+   </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <center> <table width="13%" height="31" border="2">
+     <tr>
+       <center><td>Batuhan</td></center>
+     </tr>
+   </table></center>
+   <p>&nbsp;</p>   
+   </p><h3>&lt;TR&gt;</h3>
+   <p><em>Tabloda satır oluşturmak için kullanılır.</em></p>
+  <center> <div>
+     <p>&lt;table border=&quot;1&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1. satır&lt;/td&gt;<br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+&lt;td&gt;2. satır&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+       &lt;/table&gt;</p>
+   </div></center>
+  
+   <strong>Örneğin:</strong>
+   <center>
+   <table width="13%" height="58" border="1">
+     <tr>
+       <center><td>1. Satır</td></center>
+     </tr>
+     <tr>
+       <center><td>2. Satır</td></center>
+     </tr>
+ </table>
+ </center>
+   <p><h3>&lt;TD&gt;</h3></p>
+   <em>Tabloda sütun oluşturmak için kullanılır.</em>
+   
+  <center> <div>
+     <p>&lt;table border=&quot;4&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td&gt;1. Sütun&lt;/td&gt;<br>
+  &lt;td&gt;2. Sütun&lt;/td&gt;<br>
+       &lt;/tr&gt;<br>
+       &lt;/table&gt;</p>
+   </div></center>
+   <p><strong>Görünümü:</strong></p>
+  <center> <table width="27%" height="34" border="4">
+     <tr>
+       <center><td>1. Sütun</td></center>
+       <center><td>2. Sütun</td></center>
+     </tr>
+   </table></center>
+   <p><h3>Border</h3>
+   <p><em>
+     
+     Border parametresi, hücrenin ve tablonun etrafındaki çerçevenin kalınlığını ayarlamak  için kullanılır. Border=0 olduğu zaman çerçeve tarayıcıda görünmez. Web sayfası hazırlama  sürecinde bu seçenek sıklıkla kullanılmaktadır.
+     </em>
+   </p>
+   <p><h3>Bordercolor</h3>
+   <p><em>Border parametresi ile kalınlığı belirlenen çerçevenin rengini ayarlamak için kullanılır.</em></p>
+   </p>
+ <h3>Bgcolor</h3>
+ <p><em>Tablonun veya istediğimiz hücre veya hücrelerin arka plân rengini değiştirmek için  kullanılır.</em></p>
+ <p><strong>Örneğin:</strong></p>
+ <center><div>&lt;table border=&quot;5&quot; bordercolor=&quot;#00FF33&quot; bgcolor=&quot;white&quot;&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;1. Sütun&lt;/td&gt;<br>
+&lt;td&gt;2. Sütun&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;</div></center>
+ <p><strong>Görünümü:</strong></p>
+ <center> <table border="5" bordercolor="#00FF33" bgcolor="white">
+<tr>
+<center><td>1. Sütun</td></center>
+<center><td>2. Sütun</td></center>
+</tr>
+</table></center>
+ <p><h3>Background</h3> </p>
+ <p><em>Tablonun veya istenilen hücrenin arka plânına resim eklemek için kullanılır. </em></p>
+<center> <div>&lt;html&gt;<br>
+   &lt;head&gt;<br>
+   &lt;/head&gt;<br>
+   &lt;body&gt;
+   <br>
+   &lt;table border=&quot;2&quot; background=foto1.jpg&quot;&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;Batuhan&lt;/td&gt;<br>
+&lt;td&gt;Kaya&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;Web&lt;/td&gt;<br>
+&lt;td&gt;Tasarım&lt;/td&gt;<br>
+&lt;/tr&gt; <br>
+&lt;/table&gt; <br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+ </div> </center>
+ <p><strong>Görünümü:</strong></p>
+  
+<center> <table width="157" height="69" border="2" background="fotolar/foto1.png">
+<tr>
+<td>Batuhan</td>
+<td>Kaya</td>
+</tr>
+<tr>
+<td>Web</td>
+<td>Tasarım</td>
+</tr> 
+</table> 
+  </center>
+
+ <p><h3>Width</h3></p>
+ <p><em>Tablonun veya hücrenin pixel cinsinden genişliğini belirlemek için kullanılır.<br>
+   &lt;table width=&quot;200&quot;&gt;Tablo genişliğini belirlemek için kullanılır.<br>
+   &lt;td width=&quot;200&quot;&gt;
+   Hücre genişliğini belirlemek için kullanılır. 
+ </em></p>
+ <p><h3> Height</h3>
+ <p><em>Tablonun pixel cinsinden yüksekliğini belirlemek için kullanılır.<br>
+   &lt;table height=&quot;200&quot;&gt; 
+ Tablo genişliğini belirlemek için kullanılır.<br>
+ &lt;td 
+  height=&quot;200&quot;&gt; Hücre genişliğini belirlemek için kullanılır.</em></p>
+ <p><strong>Örneğin:</strong></p>
+ </p>
+ <center><div>
+   <p>&lt;table border=&quot;1&quot;&gt;<br>
+     &lt;tr&gt;&lt;td width=&quot;10&quot;&gt;Batuhan&lt;/td&gt;&lt;/tr&gt;<br>
+     &lt;tr&gt;&lt;td height=&quot;15&quot;&gt;Web&lt;/td&gt;&lt;/tr&gt; <br>
+     &lt;tr&gt;&lt;height=&quot;20&quot;&gt;Tasarım&lt;/td&gt;&lt;/tr&gt;<br>
+     &lt;/table&gt;
+   </p>
+ </div></center>
+ <p><h3>Colspan
+ </h3>
+ <p>Colspan, aynı satırdaki hücreleri birleştirmek için kullanılır.
+ </p><h3>Rowspan
+ </h3>
+ <p>Rowspan, aynı sütundaki hücreleri birleştirmek için kullanılır.
+</p><h3>Cellspacing
+ </h3>
+ <p>Tablonun içerisindeki hücrelerin, birbirlerinden ve tablo sınırlarından uzaklığını pixel  türünden ayarlamak için kullanılır.
+</p><h3>Cellpadding
+ </h3>
+ <p>Hücrelerin içindeki verilerin, hücre sınırlarından uzaklığının ne kadar olacağını  belirlemek için kullanılır. </p>
+ <p><strong>Örneğin: </strong></p>
+ <center> <div>
+   <p>&lt;table border=&quot;2&quot; cellpadding=&quot;12&quot;&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td colspan=&quot;2&quot;&gt; a &lt;/td&gt;<br>
+  &lt;td&gt; b &lt;/td&gt;<br>
+  &lt;td&gt;c&lt;/td&gt; <br>
+  &lt;/tr&gt;<br>
+  &lt;tr&gt;<br>
+  &lt;td &gt;d&lt;/td&gt;<br>
+&lt;td rowspan=&quot;3&quot;&gt;e&lt;/td&gt;<br>
+&lt;td&gt;f&lt;/td&gt;<br>
+&lt;tr&gt;<br>
+&lt;td&gt;g&lt;/td&gt;<br>
+&lt;td&gt;h&lt;/td&gt;<br>
+&lt;td colspan=&quot;2&quot;&gt;ı&lt;/td&gt; <br>
+&lt;/tr&gt;<br>
+     &lt;/table&gt;</p>
+ </div></center>
+ <p><strong>Görünümü:</strong></p>
+ <center> <table border="2" cellpadding="12">
+<tr>
+<td colspan="2"> a </td>
+<td> b </td>
+<td>c</td> 
+</tr>
+<tr>
+<td >d</td>
+<td rowspan="3">e</td>
+<td>f</td>
+<tr>
+<td>g</td>
+<td>h</td>
+<td colspan="2">ı</td> 
+</tr>
+</table> </center>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <td width="10%" height="1308">&nbsp;</td>
+
+    </tr>
+    <tr>
+    
+      <td height="157" bgcolor="#00FF33" colspan="3"> <div class="divenalt">
+        <p>&nbsp;</p>
+       <center> <p> Bu Bir Lise 11.Sınıf  Projesidir</p></center>
+        <center><p>Kullanım Şartları - Hakkımda - Gizlilik </p></center>
+       <center> <p>-----Batuhan Web Tasarım-----</p> </center>       
+       </div>        
+      <p>&nbsp;</p></td>
+      
+  </tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
+

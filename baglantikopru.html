@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batuhan Web</title>
+<style type="text/css">
+body,td,th {
+	color: #0F3;
+	scrollbar-3d-light-color: #FFF;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="css/divenalt.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+<body bgcolor=black>
+<table width="100%" border="1">
+    <tr>
+      <td height="157" bgcolor="#00FF33" colspan="3"><img src="fotolar/wwwwlogo.png" width="322" height="220" />           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%" height="1308"> <ul id="MenuBar1" class="MenuBarVertical">
+        <li><a href="BatuhanTasarim.html">Ana Sayfa</a></li>
+<li><a href="webtasarimii.html">Web Tasarımı</a></li>
+        <li><a href="htmlkomutyapisii.html">HTML Komut Yap&#305;s&#305;</a>        </li>
+        <li><a href="listelemeetiketleri.html">Listeleme Etiketleri </a>        </li>
+        <li><a href="metinduzenleme.html">Metin D&uuml;zenleme Etiketleri</a>        </li>
+        <li><a href="gorunumduzenleme.html">G&ouml;r&uuml;n&uuml;m Düzenleme Etiketleri</a></li>
+        <li><a href="baglantikopru.html">Ba&#287;lant&#305; (K&ouml;pr&uuml;) Olu&#351;turma</a></li>
+        <li><a href="tablolar.html">Tablolar</a>        </li>
+        <li><a href="formlarr.html">Formlar</a>        </li>
+        <li><a href="cerceveler.html">&Ccedil;er&ccedil;eveler</a>        </li>
+        <li><a href="#">Resim/Video Ekleme</a>        </li>
+</ul>
+      </td>
+ <td width="80%" height="1308" valign="top" >
+   <center>
+   <h1>Bağlantı Köprü Oluşturma</h1>
+   <p>&nbsp; </p>
+   </center>
+   <h3> Sayfa İçi Bağlantı Oluşturma</h3></p>
+<p><em>Html kodları kullanarak, sayfa içi bağlantılar oluşturabilirsiniz. Bir sayfadaki metne  tıklayarak, aynı sayfanın başka bir bölümüne gidebilirsiniz. Bu işlem çapa olarak da  adlandırılır.</em><br>
+  <em><br>
+  Çapa oluşturma işlemi;</em></p>
+<p>&lt;a href="#..."&gt;...&lt;/a&gt;, &lt;a name&quot;....&quot;&gt;...&lt;/a&gt; <em>komutları kullanılarak yapılmaktadır.&lt;a href="#..."&gt; ile tıklanmasını istediğimiz metin; &lt;a name&quot;....&quot;&gt; ile de karşımıza gelmesini istediğimiz bölüm belirlenir.</em> </p>
+<p>Örneğin;</p>
+<p><a href="#sayfadisibag">Bu yazıya tıklayarak Sayfa dışı bağlantı oluşturma kısmına gidebilirsiniz.</a></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p><h3><a name="sayfadisibag">Sayfa Dışı Bağlantı Oluşturma</a></h3>
+<p><em>Hazırlamış olduğunuz web sayfaları arasında bağlantılar tanımlayarak başka sayfalar,  dokümanlar, resimler arasında geçiş yapabilirsiniz. Sayfa dışına herhangi bir bağlantı (link,  köprü) oluşturmak için &lt;a href&gt;....&lt;/a&gt; html etiketi kullanılır.</em><br>
+  <em>Herhangi bir web sayfasına bağlantı oluşturmak;</em></p>
+<p><center>
+  <div>
+    <p><a href="http://www.meb.gov.tr">Milli Eğitim Bakanlığı</a></p>
+  </div></center>
+  <p><em>&ldquo;Milli Eğitim Bakanlığı&rdquo;, yazısına tıkladığınız zaman &ldquo;www.meb.gov.tr &ldquo; internet  sitesi açılacaktır. (Sitemizde kalmaya devam etmek için lütfen Mouse topunuz ile tıklayınız)</em></p>
+  <p><em>Hazırlamış olduğumuz site içerisinde link vermek;</em></p>
+  <p>&lt;a href=&rdquo;index.html&rdquo;&gt; Ana sayfa &lt;/a&gt;</p>
+  <p><em>&ldquo;Ana Sayfa&rdquo; yazısına tıkladığımız zaman hazırlamış olduğumuz ve bilgisayarımızda  kayıtlı olan &ldquo;index.html&rdquo; sayfasına bağlantı oluşturulacaktır.</em></p>
+  <p><a href="BatuhanTasarim.html">Ana Sayfa </a></p>
+  <p><em>Herhangi bir yazıya tıkladığınız zaman resim açılması için;</em></p>
+  <p>&lt;a href=&rdquo;logo.jpg&rdquo;&gt;Logomuzun Resmini Görmek İçin Tıklayınız &lt;/a&gt;</p>
+  <a href="fotolar/logoyesil.jpg">Logomuzun Resmini Görmek İçin Tıklayınız </a>
+  <p><strong>Target</strong> <em>parametresini kullanarak, açılacak olan sayfa, resim veya dosyanın açılacağı  pencereyi belirtebiliriz.</em> </p>
+  <p>&lt;a href="..." target="..."&gt; &lt;/a&gt;</p>
+  <p><strong>target="_blank":</strong><em> Bağlantının, yeni bir pencerede açılmasını sağlar.</em><br>
+    <strong>target="_self":</strong> <em>Bağlantının, aynı pencere içerisinde açılmasını sağlar.</em><br>
+    <strong>target="_top":</strong> <em>Bağlantının, aynı pencere içerisinde en üstten itibaren açılmasını sağlar</em>.<br>
+    <strong>target="_parent" : </strong><em>Açılan bağlantı, o anda açık sayfayı oluşturmuş bir ana sayfa varsa  onun yerinde açılmasını sağlar.</em> <br>
+    <strong>target="çerçeve(frame) adı":</strong> <em>Bağlantının, adı verilen çerçevede açılmasını sağlamak  için kullanılır. </em></p>
+  <p><h3>E-Posta Adresine Bağlantı Oluşturma</h3>
+  <p><em>Hazırlamakta olduğunuz web sitesi aracılığıyla istenilen herhangi bir e-posta adresine  bağlantı oluşturabilirsiniz.</em> <em>E-posta adresine bağlantı oluşturmak için;</em></p>
+  <p>&lt;a href=&rdquo;mailto:e-posta adresi&rdquo;&gt;...&lt;/a&gt; komutu kullanılır.</p>
+  <p><em>Örneğin;</em></p>
+  <p><a href="mailto:batuhankaya1064@gmail.com">Mail Adresim </a>  </p></td>
+
+ <td width="10%" height="1308">&nbsp;</td>
+
+    </tr>
+    <tr>
+    
+      <td height="157" bgcolor="#00FF33" colspan="3"> <div class="divenalt">
+        <p>&nbsp;</p>
+       <center> <p> Bu Bir Lise 11.Sınıf  Projesidir</p></center>
+        <center><p>Kullanım Şartları - Hakkımda - Gizlilik </p></center>
+       <center> <p>-----Batuhan Web Tasarım-----</p> </center>       
+       </div>        
+      <p>&nbsp;</p></td>
+      
+  </tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

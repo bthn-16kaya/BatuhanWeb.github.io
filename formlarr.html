@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batuhan Web</title>
+<style type="text/css">
+body,td,th {
+	color: #0F3;
+	scrollbar-3d-light-color: #FFF;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="css/divenalt.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+<body bgcolor=black>
+<table width="100%" border="1">
+    <tr>
+      <td height="157" bgcolor="#00FF33" colspan="3"><img src="fotolar/wwwwlogo.png" width="322" height="220" />           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%" height="1308"> <ul id="MenuBar1" class="MenuBarVertical">
+        <li><a href="BatuhanTasarim.html">Ana Sayfa</a></li>
+<li><a href="webtasarimii.html">Web Tasarımı</a></li>
+        <li><a href="htmlkomutyapisii.html">HTML Komut Yap&#305;s&#305;</a>        </li>
+        <li><a href="listelemeetiketleri.html">Listeleme Etiketleri </a>        </li>
+        <li><a href="metinduzenleme.html">Metin D&uuml;zenleme Etiketleri</a>        </li>
+        <li><a href="gorunumduzenleme.html">G&ouml;r&uuml;n&uuml;m Düzenleme Etiketleri</a></li>
+        <li><a href="baglantikopru.html">Ba&#287;lant&#305; (K&ouml;pr&uuml;) Olu&#351;turma</a></li>
+        <li><a href="tablolar.html">Tablolar</a>        </li>
+        <li><a href="formlarr.html">Formlar</a>        </li>
+        <li><a href="cerceveler.html">&Ccedil;er&ccedil;eveler</a>        </li>
+        <li><a href="#">Resim/Video Ekleme</a>        </li>
+</ul>
+      </td>
+ <td width="80%" height="1308" valign="top" >
+   <center>
+   <h1>FORMLAR</h1>
+   </center>
+   <p>&nbsp;</p>
+   <p><em>
+     </center>
+     Html ile Basit Web İşlemleri modülünde öğrenmiş olduğunuz bilgiler; kullanıcının  aktif olmadığı, bilgileri sadece görsel olarak kullanıcıya sunan yapılardı. Formlar sayesinde  kullanıcının da aktif olacağı dinamik web sayfaları hazırlayabilmeyi öğreneceksiniz.  Kullanıcıdan veri alabilecek, alınan verilerle istenilen birçok işlemi gerçekleştirebileceksiniz.  Sosyal paylaşım siteleri, e-ticaret siteleri gibi üye girişli siteler de form elemanları  kullanılarak hazırlanmaktadır.</em></p>
+   <p>
+   <h3>&lt;FORM&gt;</h3>
+   <p> <em>&lt;form&gt; etiketi html formları oluşturmak için kullanılır. Form oluşturmayı sağlayan  tüm form elemanları &lt;form&gt;....&lt;/form&gt; etiketleri arasında yer alır.</em></p>   </p>
+   <p><strong>Genel Kullanımı:</strong></p>
+   <p><em>&lt;FORM ACTION=&rdquo;url&rdquo; METHOD=&rdquo;get- post&rdquo; TARGET=&rdquo;pencere&rdquo;&gt;...&lt;/FORM&gt;</em></p>
+   <p><strong>Örneğin:</strong></p>
+   <center><div>
+     <p>&lt;html&gt;<br>
+       &lt;head&gt;<br>
+       &lt;title&gt;Form Oluşturma&lt;/title&gt;<br>
+       &lt;body&gt;<br>
+       &lt;FORM ACTION=&quot;mailto:mailadresi@gmail.com&quot; METHOD=&quot;POST&quot; TARGET=&quot;_blank&quot;&gt; <br>
+       ....<br>
+       &lt;FORM&gt;<br>
+       &lt;/body&gt;<br>
+       &lt;html&gt;
+       <br>
+     </p>
+   </div></center>
+   <p><h3>Action</h3></p>
+   <p><em>Formdan girilecek olan bilgilerin değerlendirileceği dosyanın URL adresini belirtmek  için kullanılır. </em></p>
+   <p><h3>Method</h3></p>
+   <p><em>Formdan girilecek olan bilgilerin, değerlendirici dosyaya hangi yöntem ile  gönderileceğini belirtmek için kullanılır. Method post ve get değerlerini alabilir. Method  bölümüne, GET değeri verildiği zaman kontrollere girilen içerik o anda bulunan adrese  eklenip değerlendiriciye gönderilir. POST ise form içeriğini direkt olarak değerlendiriciye  gönderir. Formdan girilecek olan bilgilerin, değerlendirici dosyaya hangi yöntem ile  gönderileceğini belirtmek için kullanılır. Method post ve get değerlerini alabilir. Method  bölümüne, GET değeri verildiği zaman kontrollere girilen içerik o anda bulunan adrese  eklenip değerlendiriciye gönderilir. POST ise form içeriğini direkt olarak değerlendiriciye  gönderir.  </em></p>
+   <p><h3>&lt;input&gt;</h3>
+   <p><em>&lt;input&gt; tiketi form içerisinde bilgi almak için kullanılan etikettir. Hangi veri türünde  girişin yapılacağını burada kullanılan type elemanı belirlemektedir. Type elemanının  varsayılan değeri text(metin) olmakla birlikte belirtilecek olan(text, password, checkbox,  radio,submit, reset gibi) farklı değerleri de alabilir. &lt;input&gt; etiketinin sonlandırıcı etiketi  bulunmaz yani bu etiket kapatılmaz.</em><br>
+     Kullanımı:   </p>
+   <p>&lt;INPUT ALIGN=tip [CHECKED] MAXLENGTH=uzunluk NAME=isim  SIZE=boyut SRC=adres TYPE=tip VALUE=değer&gt;</p>
+   <p><em>&lt;input&gt; etiketi ile kullanılacak parametreler;</em></p>
+  <center> <table width="70%" border="2">
+     <tr>
+       <th width="35%" scope="col">Kullanılacak Parametre</th>
+       <th width="65%" scope="col">Görevi </th>
+     </tr>
+     <tr>
+       <td>TYPE</td>
+       <td><em>Girilecek olan elemanın türünü belirtmek  için kullanılır.</em></td>
+     </tr>
+     <tr>
+       <td>SRC </td>
+       <td><em>Eğer bir resim dosyası kullanılmışsa  görüntülenmesi istenilen resim dosyasının  adresini belirtmek için kullanılır.</em></td>
+     </tr>
+     <tr>
+       <td>ALIGN </td>
+       <td><em>Type parametresi ile tanımlanmış olan  elemanın sayfada konumlanacağı yeri  belirlemek için kullanılır(left, right, center).</em></td>
+     </tr>
+     <tr>
+       <td height="47">NAME</td>
+       <td><em>Girilecek olan verinin değişken ismini  belirlemek için kullanılır.</em></td>
+     </tr>
+     <tr>
+       <td>MAXLENGTH </td>
+       <td><em>Girilecek olan verinin en fazla kaç  karakterden oluşacağını belirlemek için  kullanılır.</em></td>
+     </tr>
+     <tr>
+       <td>SIZE</td>
+       <td><em>Metin kutusunun boyutunu (genişliğini)  belirlemek için kullanılır.Hiçbir rakam  belirtilmediği takdirde varsayılan değeri  20&rsquo;dir. </em></td>
+     </tr>
+     <tr>
+       <td>CHECKED </td>
+       <td><em>Bir seçim kutusu kullanıldığı durumlarda  nu kutuların işaretlenmiş olarak  görüntülenmesini sağlamak için kullanılır.  Sadece &ldquo;radio&rdquo; ve &ldquo;checkbox&rdquo; elemanları  için kullanılır.</em></td>
+     </tr>
+     <tr>
+       <td>DISABLED</td>
+       <td><em>Veri girişini engellemek için kullanılır.</em></td>
+     </tr>
+   </table> </center>
+   <p><strong>Örneğin:</strong></p>
+   <center><div>&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Form Oluşturma&lt;/title&gt;<br>
+&lt;body&gt;<br>
+&lt;FORM ACTION=&quot;mailto:mailadresi@gmail.com&quot; METHOD=&quot;POST&quot; TARGET=&quot;_blank&quot;&gt; <br>
+&lt;h3&gt;Giriş Bilgileri&lt;/h3&gt;<br>
+&lt;p&gt;T.C. Kimlik No:&lt;INPUT TYPE=&quot;text&quot; NAME=&quot;kimlikno&quot;&gt;&lt;/p&gt;<br>
+&lt;p&gt;Adı:&lt;INPUT TYPE=&quot;text&quot; NAME=&quot;adi&quot;&gt;&lt;/p&gt;<br>
+&lt;p&gt;Soyadı:&lt;INPUT TYPE=&quot;text&quot; NAME=&quot;soyadi&quot;&gt;&lt;/p&gt;<br>
+&lt;p&gt;Görevi:&lt;INPUT TYPE=&quot;text&quot; NAME=&quot;gorevi&quot;&gt;&lt;/p&gt;<br>
+&lt;/FORM&gt;
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+<br>
+   </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <p><h3>Giriş Bilgileri</h3></p>
+   <p>
+     <label for="textfield">T.C. Kimlik No:</label>
+     <input name="textfield" type="text" class="MenuBarActive" id="textfield">
+   </p>
+   <p>
+     <label for="textfield2">Adı:</label>
+     <input type="text" name="textfield2" id="textfield2">
+   </p>
+   <p>
+     <label for="textfield3">Soyadı:</label>
+     <input type="text" name="textfield3" id="textfield3">
+   </p>
+   <p>
+     <label for="textfield4">Görevi:</label>
+     <input type="text" name="textfield4" id="textfield4">
+   </p>
+   <p><h3>Form Nesneleri</h3> </p>
+   <p><em>Bir form içerisinde metin kutuları, radyo düğmeleri, onay kutuları, metin alanları,  açılır menüler gibi elemanlardan istenilenler kullanılabilir. Bu elemanları içeren formları  kullanılabilir hale getirmek için ise (submit) ve (reset) düğmeleri kullanılır. Şimdi bu  elemanların ve düğmelerin ne işe yaradığını ve nasıl kullanıldığını öğrenelim.</em></p>
+   <p><h3>CheckBox </h3></p>
+   <p><em>Hazırlamakta olduğunuz forma onay kutuları eklemek için kullanılır. Onay kutuları,  listelenen seçeneklerden istediğiniz kadarını seçebilmenize veya tümünü seçilmemiş duruma  getirmenize olanak sağlar.</em></p>
+   <p><strong>Örneğin:</strong></p>
+   <center><div>&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Form Oluşturma&lt;/title&gt;<br>
+&lt;body&gt;<br>
+&lt;FORM ACTION=&quot;mailto:mailadresi@gmail.com&quot; METHOD=&quot;POST&quot; TARGET=&quot;_blank&quot;&gt; <br>
+&lt;h3&gt;Hobileriniz&lt;/h3&gt;<br>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;kutu1&quot; checked=&quot;on&quot;&gt;Müzik&lt;br&gt;<br>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;kutu2&quot;&gt;Spor&lt;br&gt;<br>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;kutu3&quot;&gt;Sosyal Medya&lt;br&gt;<br>
+&lt;INPUT TYPE=&quot;checkbox&quot; NAME=&quot;kutu4&quot;&gt;Kitap &lt;br&gt;<br>
+&lt;/FORM&gt; <br>
+&lt;/body&gt;<br>
+&lt;/html&gt; </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <p><strong><h3>Hobileriniz</h3></strong></p>
+   <p>
+     <input type="checkbox" name="checkbox" id="checkbox" checked"on">
+     <label for="checkbox">Müzik </label>
+     <br>
+     <input type="checkbox" name="checkbox2" id="checkbox2">
+     Spor<br>
+     <input type="checkbox" name="checkbox3" id="checkbox3">
+     <label for="checkbox3">Sosyal Medya<br>
+       <input type="checkbox" name="checkbox4" id="checkbox4">
+       Kitap</label></p>
+   <p><h3> Radio </h3></p>   </p>
+   <p><em>Radio düğmeleri, kullanıcının verilen seçeneklerden sadece bir tanesini seçebileceği  durumlar için kullanılmaktadır. Radio düğmelerinin birbirleri ile ilişkili olması ve name  özelliklerinin ayni olması gerekmektedir. Checked özelliğini kullanarak sayfa yüklendiği  zaman, seçili olmasını istediğiniz değer belirlenir. Radio düğmelerinin alacağı değerler  Value seçeneğinde belirlenir.</em></p>
+   <p><strong>Örneğin:</strong></p>
+  <center> <div>&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;Form Oluşturma&lt;/title&gt;<br>
+&lt;body&gt;<br>
+&lt;FORM ACTION=&quot;mailto:mailadresi@gmail.com&quot; METHOD=&quot;POST&quot; TARGET=&quot;_blank&quot;&gt; <br>
+&lt;h3&gt;Medeni Haliniz:&lt;/h3&gt;<br>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;radio&quot;&gt;Evli&lt;br&gt;<br>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;radio&quot; checked=&quot;on&quot;&gt;Bekar&lt;br&gt;<br>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;radio&quot;&gt;Boşanmış&lt;br&gt;<br>
+&lt;INPUT TYPE=&quot;radio&quot; NAME=&quot;radio&quot;&gt;Dul &lt;br&gt;<br>
+&lt;/FORM&gt; <br>
+&lt;/body&gt;<br>
+&lt;/html&gt; </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <p>
+     <label>
+       <input name="RadioGroup1" type="radio" id="RadioGroup1_0" value="radyo" checked>
+       Evli</label>
+     <br>
+     <label>
+       <input type="radio" name="RadioGroup1" value="radyo" id="RadioGroup1_1">
+       Bekar</label>
+     <br>
+     <label>
+       <input name="RadioGroup1" type="radio" id="RadioGroup1_2" value="radyo">
+       Boşanmış</label>
+     <br>
+     <label>
+       <input type="radio" name="RadioGroup1" value="radyo" id="RadioGroup1_3">
+       Dul</label>
+     </p>
+   <p><h3>Text </h3>
+   <em>3. Text  Hazırlamakta olduğunuz forma, tek satırlık yazı yazılabilecek alan (textbox) eklemek  için kullanılır. Bu alan ile birlikte size maxlength özelliklerini de kullanabilirsiniz. </em><br>
+   </p>
+   <p><h3>Password</h3></p>
+   <p><em>Hazırlamakta olduğunuz forma şifreli alanlar eklemek için kullanılır. Type özelliğine,  &ldquo;password&rdquo; değeri atanarak oluşturulur.
+     </em></p>
+   <p><strong>Örneğin:</strong>   
+   </p>
+   <center><div>&lt;Form&gt;<br>
+     Kullanıcı Adı:&lt;input tyoe=&quot;text&quot; name=&quot;kadi&quot; /&gt;<br>
+     Parola: &lt;input type=&quot;password&quot; name=&quot;sifre&quot; maxlength=&quot;8&quot; /&gt;<br>
+     &lt;/Form&gt;
+   </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <p>
+     <label for="textfield5">Kullanıcı Adı:</label>
+     <input type="text" name="textfield5" id="textfield5">
+   &nbsp;
+   <label for="password">Şifre:</label>
+   <input type="password" name="password" id="password" maxlength="8">
+   </p>
+   <p><h3>Textarea</h3>
+   <p><em>Text kutularının görevi, hazırlamakta olduğumuz forma tek satırlık veri giriş alanları  eklemek iken Textarea kullanarak forma, birden fazla satırdan oluşan alanlar ekleyebiliriz.  Rows (satır) ve cols (sütun) tanımlamaları yapılarak bu metin alanının kaç satır ve kaç  sütundan oluşması gerektiği belirlenir. </em></p>
+   <p><strong>Örneğin:</strong></p>
+   <center><div>&lt;Form&gt;<br>
+   Adresiniz&lt;br&gt;<br>
+   &lt;TEXTAREA NAME=&quot;adresiniz&quot; ROWS=&quot;5&quot; COLS=&quot;30&quot;&gt;<br>
+   &lt;/TEXTAREA&gt;<br>
+   &lt;/Form&gt;
+   </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <p>&nbsp;</p>
+   <p>
+     <label for="textarea">Adresiniz:</label>
+     <textarea name="textarea" id="textarea" ROWS="5" COLS="30"></textarea>   
+     </p>
+   </p>
+   <p><h3>Açılır Menüler</h3>
+   <p><em>Hazırlamakta olduğunuz formlara &lt;select&gt; (seç) etiketi kullanarak açılır menüler  ekleyebilirsiniz. Listbox (liste kutusu) ve drop-down list (aşağı açılır liste) şeklinde iki farklı  tür de seçim kutusu oluşturulabilir. Listede yer alacak elemanların neler olacağı ise &lt;option&gt; etiketi ile belirlenir.</em></p>
+   <p><strong>Örneğin:</strong></p>
+  <center> <div>
+     <p>&lt;form&gt;<br>
+       Burcunuz:&lt;br&gt;
+       <br>
+       &lt;select name=&quot;burc&quot;&gt;<br>
+       &lt;option&gt;Koç&lt;/option&gt;<br>
+       &lt;option&gt;Boğa&lt;/option&gt; <br>
+       &lt;option&gt;İkizler&lt;/option&gt; <br>
+       &lt;option&gt;Yengeç&lt;/option&gt;<br>
+       &lt;/select&gt;<br>
+       &lt;/form&gt;
+     </p>
+   </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <p>Burcunuz:<br> 
+<select name="burc">
+<option>Koç</option>
+<option>Boğa</option> 
+<option>İkizler</option> 
+<option>Yengeç</option>
+</select>
+   </p>
+   <p><em>Size özelliği listeden yer alan  elemanlardan istediğiniz kadarının ekranda görüntülenmesini ayarlamak için kullanılır.  Multiple özelliği ise Ctrl tuşu kullanarak birden fazla seçim yapmamıza olanak  sağlamaktadır. </em></p>
+   <p><h3>Reset</h3>
+   <p><em>
+     </p>   
+     </p>
+     <em>Üzerine gelip tıklandığı zaman, form içeriğini temizleyip kullanıcının forma yeniden  bilgi girişi sağlayan bir düğme (buton) oluşturulmasını sağlar.</em>
+<p><em>Kullanımı:</em> &lt;input type=&quot;reset&quot;&gt;</p>
+   <p><em>&ldquo;Value&rdquo; özelliği, düğme üzerinde istediğiniz metni yazmanıza olanak sağlar.</em></p>
+   <p><h3>Submit</h3>
+   <p><em>Submit (gönder), form içerisinde yer alan içeriklerin sunucuya gönderilmesini  sağlamak için kullanılır. </em></p>
+   <p><em>Kullanımı: </em>&lt;input type=&quot;submit&gt;</p>
+   <p><em>&ldquo;Value&rdquo; özelliği düğme üzerinde istediğiniz metni yazmanıza olanak sağlar. </em></p>
+   <p><strong>Örneğin:</strong></p>
+   <center><div>&lt;form&gt;<br>
+     Adı:&lt;input type=&quot;text&quot; name&quot;adi&quot; size=&quot;15&quot; /&gt;<br>
+     Soyadı:&lt;input type=&quot;text&quot; name&quot;soyadi&quot; size=&quot;15&quot; /&gt;<br>
+     &lt;input type=&quot;submit&quot; value=&quot;Gönder&quot;/&gt;<br>
+     &lt;input
+     type=&quot;reset&quot; value=&quot;Temizle&quot; /&gt;<br>
+     &lt;/form&gt;
+     <br>
+   </div></center>
+   <p><strong>Görünümü:</strong></p>
+  
+   
+     <label for="textfield6">Adı:</label>
+     <input type="text" name="textfield6"  size="15">
+     <label for="textfield7">Soyadı:</label>
+     <input type="text" name="textfield7"  size="15">
+     <input type="submit" name="submit"  value="Gönder">
+     <input type="reset" name="reset"  value="Temizle">
+     
+   
+   <p>&nbsp;</p>   </p></td>
+
+ <td width="10%" height="1308">&nbsp;</td>
+
+    </tr>
+    <tr>
+    
+      <td height="157" bgcolor="#00FF33" colspan="3"> <div class="divenalt">
+        <p>&nbsp;</p>
+       <center> <p> Bu Bir Lise 11.Sınıf  Projesidir</p></center>
+        <center><p>Kullanım Şartları - Hakkımda - Gizlilik </p></center>
+       <center> <p>-----Batuhan Web Tasarım-----</p> </center>       
+       </div>        
+      <p>&nbsp;</p></td>
+      
+  </tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

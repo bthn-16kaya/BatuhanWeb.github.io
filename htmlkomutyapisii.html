@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batuhan Web</title>
+<style type="text/css">
+body,td,th {
+	color: #0F3;
+	scrollbar-3d-light-color: #FFF;
+}
+.fnwfw {
+	color: #0F3;
+	background-color: #000;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="css/divenalt.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+<body bgcolor=black>
+<table width="100%" border="1">
+    <tr>
+      <td height="157" bgcolor="#00FF33" colspan="3"><img src="fotolar/wwwwlogo.png" width="322" height="220" />           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%" height="1308"> <ul id="MenuBar1" class="MenuBarVertical">
+        <li><a href="BatuhanTasarim.html">Ana Sayfa</a></li>
+<li><a href="webtasarimii.html">Web Tasarımı</a></li>
+        <li><a href="htmlkomutyapisii.html">HTML Komut Yap&#305;s&#305;</a>        </li>
+        <li><a href="listelemeetiketleri.html">Listeleme Etiketleri </a>        </li>
+        <li><a href="metinduzenleme.html">Metin D&uuml;zenleme Etiketleri</a>        </li>
+        <li><a href="gorunumduzenleme.html">G&ouml;r&uuml;n&uuml;m Düzenleme Etiketleri</a></li>
+        <li><a href="baglantikopru.html">Ba&#287;lant&#305; (K&ouml;pr&uuml;) Olu&#351;turma</a></li>
+        <li><a href="tablolar.html">Tablolar</a>        </li>
+        <li><a href="formlarr.html">Formlar</a>        </li>
+        <li><a href="cerceveler.html">&Ccedil;er&ccedil;eveler</a>        </li>
+        <li><a href="#">Resim/Video Ekleme</a>        </li>
+</ul>
+      </td>
+ <td width="80%" height="1308" align="left"><p> <strong><h1><center>HTML Komut Yapısı</center></h1>
+ </strong> 
+   <strong><h1><center>
+   <p>&nbsp;</p>
+ </center>
+ </h1>
+ </strong>   
+   <p><em>Html (Hypertext Markup Language), web sayfaları hazırlamak için kullanılan bir  dildir. Html komutları herhangi bir metin (text) düzenleme editöründe yazılabileceği gibi,  çeşitli web tasarımı editörlerini kullanarak da oluşturulabilir.</em></p>
+   <p><em>Html komutları etiketlerden (tag) oluşur. Html komutları yazılırken aşağıdaki  kurallara dikkat edilmesi gerekir;</em>
+   <li><em>Html komutları &ldquo;<&rdquo; ve &ldquo;>&rdquo; işaretleri arasına yazılır. Burada yer alan&ldquo;< >&rdquo;  etiketleme yapmak için kullanılan işarettir. &lt;etiketadi&gt;.......&lt;/etiketadi&gt;, &lt;tag&gt;.....&lt;/tag&gt;</em></li>
+   <li><em>Html etiketleri yazılırken Türkçe karakterler kullanılmamalıdır.(ş, ç, ö, ü, ı, ğ)</em></li>
+   <li><em>Html komutları büyük küçük harf duyarlı değildir. Başka bir deyişle tümü büyük harflerle açılmış olan bir etiket tümü küçük harflerle yazılan aynı etiket  ile kapatılabilir &lt;body&gt;.....&lt;/BODY&gt; veya &lt;Html&gt;.....&lt;/html&gt;</em></li>
+   <li><em>Açılan bir etiket kapatılmalıdır. İlk açılan etiket en son kapatılır ve etiketi  kapatma sırasında &ldquo;/&rdquo; işareti unutulmamalıdır.   </em></li>
+ <center> <div class="fnwfw">
+     <p>&lt;html&gt;<br>
+       &lt;head&gt;<br>
+        &lt;title&gt;...&lt;/title&gt;<br>
+       &lt;/head&gt;<br>
+       &lt;body&gt;<br>
+       .<br>
+       .<br>
+       içerik<br>
+       .<br>
+       .<br>
+       &lt;/body&gt;<br>
+       &lt;/html&gt;</p>
+  </div> </center>
+  <p><h3>&lt;HTML&gt;</h3>
+  <p><em>&lt;html&gt; etiketi, html kodlarının yazımına başladığımızı gösteren etikettir. Tüm html  kodları &lt;html&gt;....&lt;/html&gt; arasında yer alır. &lt;/html&gt;  ile html kodlarının yazımının bittiği  anlaşılır. Bu etiketin hiçbir parametresi yoktur.  </em></p>
+  <p><h3>&lt;HEAD&gt;</h3>
+  <p>Hazırlayacağımız sayfa ile ilgili bilgilerin bulunduğu sayfa başlığı (title), link  özellikleri, siteyi tarayıcıya ve arama motorlarına tanıtmak amacıyla kullanılan Meta  etiketleri bölümdür.<br>
+    Meta etiketinde kullanılan parametreler Tablo&rsquo;da gösterilmiştir.</p>
+  <center><table width="87%" border="1">
+    <tr>
+      <td align="center">KULLANILACAK PARAMETRELER</td>
+      <td align="center">GÖREVİ</td>
+    </tr>
+    <tr>
+      <td align="center">name</td>
+      <td align="center">Author, description ve keywords özellikleri tanımlanır.</td>
+    </tr>
+    <tr>
+      <td align="center">http-equiv</td>
+      <td align="center">Refresh, expires,content ve content-style-type özellikleri.</td>
+    </tr>
+    <tr>
+      <td align="center">Size</td>
+      <td align="center">Yazının boyutu belirlenir.</td>
+    </tr>
+  </table></center>
+  <p><strong>NAME:</strong> <em>Sayfanın yazarı, sayfanın yayın tarihi gibi bilgileri içerir.</em></p>
+  <p>&lt;<strong>meta name="author" content="</strong><em>özgü"</em>&gt;<br>
+    &lt;<strong>meta name="description" content=</strong><em>"sayfanın tanımını yazınız"</em>&gt; <br>
+    &lt;<strong>meta name ="description" content =</strong><em>"Bu sayfa web tasarımı dersi modülleri  için hazırlanmıştır. "</em>&gt; <br>
+    &lt;<strong>meta name="keywords" content=</strong><em>"siteniz arama motorlarında hangi anahtar  kelimelerle tanımlansın istiyorsanız buraya yazınız."</em>&gt; <br>
+    Şekillerinde yazılır.</p>
+  <p><strong>HTTP-EQUIV:</strong> <em>İçinde yer aldığı sayfanın, web server tarafından ziyaretçiye  gönderilmesinde oluşturulacak karşılık başlığı bölümünde yer alacak bilgiler içerir.</em></p>
+  <p><strong>Sıklıkla kullanılan meta etiketleri ve açıklamaları: </strong></p>
+  <p>&lt;<strong>meta http-equiv=Content-Type content="text/htm; charset=windows1254"</strong>&gt;<br>
+    &lt;<strong>meta http-equiv=Content-Type content="text/htm; charset=iso-8859-9"</strong>&gt; <br>
+    &lt;<strong>meta http-equiv=Content-Type content="text/htm; charset=utf-8"</strong>&gt;</p>
+  <p><em>Bu etiketler Türkçe karakter sorununu ortadan kaldırmak ve Türkçe karakter desteği  sağlamak için kullanılır.</em></p>
+  <p>&lt;<strong>meta http-equiv="expires" content ="Tarih"</strong>&gt;</p>
+  <p><em>Güncelleme için kullanılır. İnternette açılan bir sayfa bilgisayara kaydedilir. Bu sayfa  tekrar açılamak istendiğinde, bilgisayardaki kayıtlı sayfa açılır. Bu etiket ile belirtilen  tarihten sonra bu sayfa açılmak istenirse sayfanın tekrardan serverdan yüklenmesi sağlanır. </em></p>
+  <p>&lt;<strong>meta http-equiv="expires" content ="Wed, 29 Dec 2011 15:21:59 GMT"</strong>&gt;<br>
+    &lt;<strong>meta http-equiv="refresh" content="5; url=anasayfa.htm"</strong>&gt; </p>
+  <p>Sayfanın belirtilen süre sonra yenilenmesini sağlar. Yukarıdaki örnekte sayfa 5 saniye  sonra yenilenir ve URL de belirtilen anasayfa.htm sayfası açılır. Eğer URL boş bırakılırsa  aynı sayfa tekrarlanır.</p>
+  <p>&lt;<strong>meta name="robots" content="all veya none"</strong>&gt;</p>
+  <p><em>Hazırladığımız sayfanın arama motorlarının robotları tarafından taranmasına izin  vermek veya engellemek için kullanılır. İzin için all, engelleme için none kullanılır. </em><br>
+    <em>Meta etiketi ile tanımlanan bilgiler kullanıcı tarafından görüntülenmez.    </em><br>
+  </p>
+  <p><h3>&lt;BODY&gt;</h3>
+  <p><em>Html belgesinin tüm içeriğinin yer aldığı bölümdür. Bu bölümde yer alan içeriğin  tümü tarayıcıda görüntülenir. Body etiketi ile birlikte kullanılabilecek parametreler ve  görevleri aşağıda gösterilmiştir. </em></p>
+  <p><strong>Bgcolor:</strong><em> Hazırlamış olduğunuz web sayfasının arka plân rengini belirlemek  için kullanılır. </em></p>
+  <p><em>Kullanımı;<br>
+    &lt;body bgcolor=&rdquo;blue&rdquo;>...&lt;/body&gt; </em></p>
+  <p><strong>Background:</strong> <em>Hazırlamış olduğunuz web sayfasının zemininin bir resimden  oluşmasını isteyebilirsiniz. Bu parametre arka plânda kullanılmak istenilen resmi  belirlemek için kullanılır.</em></p>
+  <p><em>Kullanımı;<br>
+    &lt;body background=&rdquo;resim.jpg&rdquo;&gt;...&lt;/body&gt;</em></p>
+  <p><strong>Link: </strong><em>Web sayfanızda kullanacağınız linklerin rengini belirlemek için kullanılır.</em></p>
+  <p><strong>Alink:</strong> <em>Web sayfanızdaki herhangi bir Linke tıklandığı zaman oluşacak rengin ne  olacağını belirlemek için kullanılır.</em></p>
+  <p><strong>Vlink:</strong><em> Web sayfanızdaki önceden ziyaret edilmiş linklerin renginin hangi renk  olacağını belirlemek için kullanılır.</em></p>
+  <p><h3><strong>&lt;TİTLE&gt;</strong></h3>
+  <p><em>Sayfanın tarayıcıdaki başlığının ne olacağını belirlemek için kullanılır. Title etiketleri &lt;head&gt;....&lt;/head&gt; etiketleri arassında yer alır.</em></p>
+  <p><em>Kullanımı;<br>
+    &lt;title&gt; görüntülenmesini istediğiniz başlık &lt;/title&gt;</em> </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  </p>
+  <p><br>
+  </p>
+  </p></td>
+ <td width="10%" height="1308">&nbsp;</td>
+
+    </tr>
+    <tr>
+    
+      <td height="157" bgcolor="#00FF33" colspan="3"> <div class="divenalt">
+        <p>&nbsp;</p>
+       <center> <p> Bu Bir Lise 11.Sınıf  Projesidir</p></center>
+        <center><p>Kullanım Şartları - Hakkımda - Gizlilik </p></center>
+       <center> <p>-----Batuhan Web Tasarım-----</p> </center>       
+       </div>        
+      <p>&nbsp;</p></td>
+      
+  </tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

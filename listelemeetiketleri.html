@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batuhan Web</title>
+<style type="text/css">
+body,td,th {
+	color: #0F3;
+	scrollbar-3d-light-color: #FFF;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="css/divenalt.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+<body bgcolor=black>
+<table width="100%" border="1">
+    <tr>
+      <td height="157" bgcolor="#00FF33" colspan="3"><img src="fotolar/wwwwlogo.png" width="322" height="220" />           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%" height="1308"> <ul id="MenuBar1" class="MenuBarVertical">
+        <li><a href="BatuhanTasarim.html">Ana Sayfa</a></li>
+<li><a href="webtasarimii.html">Web Tasarımı</a></li>
+        <li><a href="htmlkomutyapisii.html">HTML Komut Yap&#305;s&#305;</a>        </li>
+        <li><a href="listelemeetiketleri.html">Listeleme Etiketleri </a>        </li>
+        <li><a href="metinduzenleme.html">Metin D&uuml;zenleme Etiketleri</a>        </li>
+        <li><a href="gorunumduzenleme.html">G&ouml;r&uuml;n&uuml;m Düzenleme Etiketleri</a></li>
+        <li><a href="baglantikopru.html">Ba&#287;lant&#305; (K&ouml;pr&uuml;) Olu&#351;turma</a></li>
+        <li><a href="tablolar.html">Tablolar</a>        </li>
+        <li><a href="formlarr.html">Formlar</a>        </li>
+        <li><a href="cerceveler.html">&Ccedil;er&ccedil;eveler</a>        </li>
+        <li><a href="#">Resim/Video Ekleme</a>        </li>
+</ul>
+      </td>
+ <td width="80%" height="1308" valign="top" >
+   <center>
+   <h1>Listeleme Etiketleri</h1></center>
+   <p>
+   <h4>&lt;OL&gt;</h4>
+   </p>   
+   <p><em>Sıralı liste oluşturmak için kullanılır. Kelime işlemci programındaki numaralandırma  işlemi ile aynıdır. Listeleme işlemi harf, rakam veya roma rakamı şeklinde yapılabilir.  Belirteceğiniz parametreler yardımı ile de istediğiniz harf, rakam veya roma rakamından  başlayarak sıralı listenizi oluşturabilirsiniz.<br>
+     &lt;ol&gt; etiketi, &lt;li&gt; etiketi ile birlikte kullanılmalıdır.</em></p>
+   <p><strong>Örnek 1:</strong> <em>Burada &lt;ol&gt; etiketini kullanarak listeleme işlemine başlıyoruz. &lt;li&gt; etiketini kullanarak da listeleyeceğimiz elemanların isimlerini yazıyoruz.</em></p>
+   
+     <center>  <div>
+         <p>&lt;ol&gt;<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Elma&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Armut&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Kavun&lt;/li&gt;<br>
+&lt;/ol&gt;
+          </p>
+       </div></center>
+     
+   <p><strong>Görünümü:</strong></p>
+   <ol>
+     <li>Elma</li>
+     <li>Armut</li>
+     <li>Kavun</li>
+   </ol>
+   <p><strong>Type</strong> <em>parametresi kullanarak listenin rakamla mı harfle mi başlayacağını  belirleyebiliriz. </em></p>
+   <p><em>&ldquo;A&rdquo; harfi yerine küçük &ldquo;a&rdquo; harfi yazılırsa sıralama a, b, c, …. şeklinde küçük harflerle  olacaktır.</em></p>
+  <center> <div>&lt;ol type=&quot;A&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Elma&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Armut&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Kavun&lt;/li&gt;<br>
+&lt;/ol&gt; </div> </center>
+   <p><strong>Görünümü:</strong></p>
+   <ol type="A">
+     <li>Elma</li>
+     <li>Armut</li>
+     <li>Kavun</li>
+   </ol>
+   <p><em>&ldquo;I&rdquo; harfi yerine küçük&rdquo;i&rdquo; harfi yazılırsa, sıralama i, ii, iii,…. şeklinde küçük roma  rakamları ile yapılacaktır.</em></p>
+   <center><div>&lt;ol type=&quot;I&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Elma&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Armut&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Kavun&lt;/li&gt;<br>
+&lt;/ol&gt; </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <ol type="I">
+     <li>Elma</li>
+     <li>Armut</li>
+     <li>Kavun</li>
+     </ol>
+   <p><em>Sıralamanın her zaman &ldquo;1&rdquo; den veya &ldquo;A&rdquo; dan başlamasını istemeyebiliriz. Bu tür  durumlarda Start parametresi kullanılır. Start parametresinin her zaman sayı olması  gerekmektedir. Örneğin sıralamayı &ldquo;C&rdquo; harfinden başlatmak istiyorsak start değerine &ldquo;C&rdquo;  yazmak yerine &ldquo;3&rdquo; yazmak zorundayız.</em></p>
+   <center><div>&lt;ol type=&quot;A&quot; start=&quot;3&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Elma&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Armut&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Kavun&lt;/li&gt;<br>
+&lt;/ol&gt; </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <ol type="A" start="3">
+     <li>Elma</li>
+     <li>Armut</li>
+     <li>Kavun</li>
+     </ol>
+   <p><h3>&lt;UL&gt;</h3>
+   <p><em>&lt;ul&gt; etiketi madde işaretleri şeklinde listeleme yapmak için kullanılır.</em></p>
+   <center><div>&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Elma&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Armut&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Kavun&lt;/li&gt;<br>
+&lt;/ul&gt; </div></center>
+   <p><strong>Görünümü:</strong></p>
+   <ul>
+     <li><strong><em>Elma</em></strong></li>
+     <li><strong><em>Armut</em></strong></li>
+     <li><strong><em>Kavun</em></strong></li>
+     </ul>
+   <p><em>Type parametresi ile kullanacağınız madde işaretinin şeklini belirleyebilirsiniz. Type  ile kullanılan parametreler disc (içi dolu daire), circle (içi boş daire) ve square (içi dolu  kare)&rsquo;dir. </em></p>
+   
+    <center> <div>
+       <p>&lt;html&gt;<br>
+         &lt;body&gt;       <br>
+         &lt;ul type=&quot;circle&quot;&gt;<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Elma&lt;/li&gt;<br>
+         &lt;/ul&gt;<br>
+         &lt;ul type=&quot;disc&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Armut&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+&lt;ul type=&quot;square&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Kavun&lt;/li&gt;<br>
+&lt;/ul&gt;       <br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+       </p>
+     </div></center>   
+   <p><strong>Görünümü: </strong></p>
+  <ul type="circle">
+<li>Elma</li>
+</ul>
+<ul type="disc">
+<li>Armut</li>
+</ul>
+<ul type="square">
+<li>Kavun</li>
+</ul>
+<p><h3>&lt;LI&gt;</h3>
+</p></p>
+<p><em>Liste oluşturmak için liste elemanlarını belirtmede kullanılan etikettir. Sıralamanın  hangi şekilde olacağını ise &lt;ol&gt; ve &lt;ul&gt; etiketleri belirler.</em></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></td>
+ <td width="10%" height="1308">&nbsp;</td>
+
+    </tr>
+    <tr>
+    
+      <td height="157" bgcolor="#00FF33" colspan="3"> <div class="divenalt">
+        <p>&nbsp;</p>
+       <center> <p> Bu Bir Lise 11.Sınıf  Projesidir</p></center>
+        <center><p>Kullanım Şartları - Hakkımda - Gizlilik </p></center>
+       <center> <p>-----Batuhan Web Tasarım-----</p> </center>       
+       </div>        
+      <p>&nbsp;</p></td>
+      
+  </tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

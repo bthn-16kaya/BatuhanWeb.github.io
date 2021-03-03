@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batuhan Web</title>
+<style type="text/css">
+body,td,th {
+	color: #0F3;
+	scrollbar-3d-light-color: #FFF;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="css/divenalt.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+<body bgcolor=black>
+<table width="100%" border="1">
+    <tr>
+      <td height="157" bgcolor="#00FF33" colspan="3"><img src="fotolar/wwwwlogo.png" width="322" height="220" />           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%" height="1308"> <ul id="MenuBar1" class="MenuBarVertical">
+        <li><a href="BatuhanTasarim.html">Ana Sayfa</a></li>
+<li><a href="webtasarimii.html">Web Tasarımı</a></li>
+        <li><a href="htmlkomutyapisii.html">HTML Komut Yap&#305;s&#305;</a>        </li>
+        <li><a href="listelemeetiketleri.html">Listeleme Etiketleri </a>        </li>
+        <li><a href="metinduzenleme.html">Metin D&uuml;zenleme Etiketleri</a>        </li>
+        <li><a href="gorunumduzenleme.html">G&ouml;r&uuml;n&uuml;m Düzenleme Etiketleri</a></li>
+        <li><a href="baglantikopru.html">Ba&#287;lant&#305; (K&ouml;pr&uuml;) Olu&#351;turma</a></li>
+        <li><a href="tablolar.html">Tablolar</a>        </li>
+        <li><a href="formlarr.html">Formlar</a>        </li>
+        <li><a href="cerceveler.html">&Ccedil;er&ccedil;eveler</a>        </li>
+        <li><a href="#">Resim/Video Ekleme</a>        </li>
+</ul>
+      </td>
+ <td width="80%" height="1308" valign="top" >
+   <center>
+   <h1> ÇERÇEVELER</h1>
+   </center>
+   <p>&nbsp;</p>
+<p><em>Çerçeveler, bir tarayıcı penceresini birden fazla pencereye bölüp her bir pencere  içerisinde farklı içerikler gösterilmesini; ayrıca bir pencerede tanımlanmış olan bağlantıların  (linklerin) istediğiniz bir diğer pencerede görüntülenmesini sağlar.</em></p>
+<p><em>Çerçevelerin özelliklerini aşağıda olduğu gibi özetleyebiliriz; </em></p>
+<ul>
+  <li>Her çerçevenin kendine ait bir URL adresi vardır. </li>
+  <li>Her çerçeveye bir isim verilebilir.</li>
+  <li>Çerçeveler kullanıcı tarafından verilecek ölçülerle boyutlandırılabileceği gibi  otomatik olarak da boyutlanabilme özelliğine sahiptir.</li>
+  </ul>
+<p><em>İçinde çerçeveler bulunan bir sayfa oluşturmak için, öncelikle çerçevelerin  özelliklerini tanımlayan temel bir html dosyası oluşturmak gerekir. Çerçevelerden oluşan bir  sayfanın normal bir html belgesinden farkı içeriğinde  etiketi yerine,   etiketini kullanmasıdır.</em></p>
+<p><h3>&lt;frameset&gt;</h3></p>
+<p><em>Çerçeve oluşturmak için kullanılan etikettir. Bu komut ile tarayıcı penceresinin kaç  parçaya bölüneceği (çerçeve sayısı) ve bu çerçevelerin boyutlarının ne kadar olacağı  belirlenir. </em></p>
+<p><strong>Kullanımı: </strong></p>
+<center><div>&lt;HTML&gt;<br>
+  &lt;HEAD&gt;<br>
+  .<br>
+  .<br>
+  .<br>
+  .<br>
+  &lt;/HEAD&gt;<br>
+  &lt;FRAMESET&gt;<br>
+  ......<br>
+  &lt;/FRAMESET&gt;<br>
+  &lt;/HTML&gt;
+</div></center>
+<p><em>Bu etiketle birlikte kullanılacak iki parametre vardır. Bunlar Cols ve Rows  parametreleridir. </em></p>
+<p><h3>Cols</h3>
+</p>
+<p><em>&lt;frameset&gt; etiketi ile kullanılan parametrelerden birisidir. Ekranı dikey olarak  (sütunlar halinde) tanımlanan boyutlara bölmek için kullanılır.</em></p>
+<p><em>Oluşturulacak sütunların genişlikleri pixel veya yüzde(%) cinsinde belirlenir. Sütun  sayısı, çerçeve sayısını belirleyici niteliktedir. </em></p>
+<p><strong>Kullanımı:&lt;</strong><em>FRAMESET COLS="1. sütun genişliği, 2. sütun genişliği, 3.sütunun genişliği, …"</em><strong>&gt;</strong></p>
+<p><strong>Örneğin:</strong></p>
+<p>&lt;frameset cols=&quot;30%, 40%, 30%&quot;&gt;</p>
+<p>Buradaki 1.sütun sayfanın %30&rsquo;u genişliğinde, 2. Sütun %40&rsquo;ı genişliğinde ve 3.  sütun ise %30&rsquo;u genişliğinde boyutlandırılmıştır. </p>
+<center> <div>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;title&gt; Frameset Cols Örneği &lt;/title&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;frameset cols=&quot;30%, 40%, 30%&quot;&gt;
+  <br>
+  &lt;frame name=&quot;sutun1&quot; src=&quot;s1.html&quot;&gt;
+  <br>
+  &lt;frame name=&quot;sutun2&quot; src=&quot;s2.html&quot;&gt; <br>
+  &lt;frame name=&quot;sutun3&quot; src=&quot;s3.html&quot;&gt; <br>
+  &lt;/frameset&gt;<br>
+  &lt;/html&gt;
+</div></center>
+<p>Görünümü: <a href="css/cerceveornek11.html">Görmek İçin Tıklayınız.</a> (s1,s2 ve s3 dosyalarına renkler verilmiştir).</p>
+<p>&lt;frameset cols=&rdquo;200,*,200&rdquo;&gt;</p>
+<p><em>Burada sütunlar şeklinde tanımlanan birinci ve üçüncü çerçeve 200 pixel değerinde, 2.  çerçeve ise sayfanın geri kalan kısmını kapsayacak şekilde boyutlandırılmıştır.</em></p>
+<p><h3>Rows</h3>
+<p><em>&lt;frameset&gt;  etiketi ile kullanılan bir diğer parametre ise rows parametresidir. Ekranı  yatay olarak (satırlar halinde) tanımlanan boyutlarda bölmek için kullanılır.</em></p>
+<p><strong>Kullanımı:</strong> &lt;FRAMESET ROWS="1. satır genişliği, 2. satır genişliği, 3.satır genişliği, …"&gt;</p>
+<p><strong>Örneğin:</strong></p>
+<p>&lt;frameset rows=&rdquo;200,*,200&rdquo;&gt;</p>
+<p><em>Sayfada görüntülenecek olan çerçevelerin sayısı ve boyutları belirlendikten sonra &lt;FRAME&gt; etiketi kullanılarak pencerelerin içeriğinde neler olacağı belirlenir.  </em></p>
+<center><div>&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt; Frameset Rows Örneği &lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;frameset rows=&quot;30%, 40%, 30%&quot;&gt; <br>
+&lt;frame name=&quot;satir1&quot; src=&quot;s1.html&quot;&gt; <br>
+&lt;frame name=&quot;satir2&quot; src=&quot;s2.html&quot;&gt; <br>
+&lt;frame name=&quot;satir3&quot; src=&quot;s3.html&quot;&gt; <br>
+&lt;/frameset&gt;<br>
+&lt;/html&gt; </div></center>
+<p>Görünümü: <a href="css/cercevesatirornek11.html">Görmek İçin Tıklayınız.</a> (s1,s2 ve s3 dosyalarına renkler verilmiştir).</p>
+<p><h3>&lt;frame&gt;</h3>
+<p><em>&lt;frame&gt; etiketi, &lt;frameset&gt;  etiketi ile oluşturulan çerçevelerin içeriğinde gösterilecek  sayfaların belirlenmesi için kullanılır. </em></p>
+<p><strong>Örneğin:</strong></p>
+<center><div>&lt;frameset rows=&quot;50%, 50%&gt;<br>
+  &lt;frame name=&quot;s1&quot; src=&quot;sayfa1.html&quot;&gt;<br>
+  &lt;frame name=&quot;s2&quot; src=&quot;sayfa2.html&quot;&gt;<br>
+  &lt;/frameset&gt;
+</div></center>
+<p><em>Yukarıdaki örnekte &lt;frameset&gt;  ile tanımlanmış çerçevelerden oluşmuş sayfanın ilk  %50&rsquo;lik kısmını kapsayacak bölümüne önceden oluşturulmuş olan sayfa1.html deki içerik;  diğer %50 lik dilimini oluşturan 2. çerçeveye ise sayfa2.html olarak kaydedilmiş sayfadaki  içerik yerleştirilecektir. Eğer bu sayfalar önceden hazırlanıp kaydedilmemişse tarayıcıda  &ldquo;sayfa görüntülenemiyor&rdquo; hata mesajı görüntülenecektir.</em></p>
+<p>&lt;frame&gt; etiketi ile kullanılabilecek parametreler ve görevleri Tablo'da  gösterilmiştir.</p>
+<center><table width="84%" height="414" border="2">
+  <tr>
+    <th scope="col">Parametre</th>
+    <th scope="col">Görevi</th>
+  </tr>
+  <tr>
+    <td>NAME </td>
+    <td>Çerçevenin ismini gösterir. </td>
+  </tr>
+  <tr>
+    <td>RESIZE/NORESIZE </td>
+    <td>Çerçeve boyutunun değiştirilip  değiştirilemeyeceğini gösterir</td>
+  </tr>
+  <tr>
+    <td>SCROLLING </td>
+    <td>Çerçevenin içeriğinin ekrana sığmadığı  durumlarda, kaydırma çubuğu kullanılıp  kullanılmayacağını belirler. Varsayılan  değeri auto olmakla birlikte, yes veya no  değerleri de verilebilir.</td>
+  </tr>
+  <tr>
+    <td>MARGINHEIGHT</td>
+    <td>Sayfadaki ilk nesnenin yukardan ne kadar  uzak olacağını belirler.</td>
+  </tr>
+  <tr>
+    <td>MARGINWIDTH</td>
+    <td>Sayfadaki ilk nesnenin soldan ne kadar  uzak olacağını belirler.</td>
+  </tr>
+  <tr>
+    <td>SRC </td>
+    <td>Çerçeve içinde gösterilmesini istediğimiz  dosyanın URL adresini belirtmek için  kullanılır. </td>
+  </tr>
+</table></center>
+<p><h3>&lt;noframe&gt;</h3>
+<p><em>Bazı tarayıcılar çerçeve özelliğini desteklemeyebilir. Bu tür durumlarda sayfaya &lt;noframe&gt; etiketi kullanarak mesaj yazılması sağlanır ve kullanıcının bu komutla belirlenen  mesajla karşılaşması sağlanır.</em></p>
+<p><strong>Örneğin:</strong></p>
+<center><div>&lt;html&gt;<br>
+  &lt;head&gt;&lt;title&gt;Noframe Örneği&lt;/title&gt;&lt;/head&gt;<br>
+  &lt;frameset cols=&quot;30%,70%&quot;&gt;<br>
+  &lt;frame name=&quot;s1&quot; src=&quot;s1.html&quot; scrolling=&quot;yes&quot; marginwidth=&quot;5&quot; marginheight=&quot;5&quot; noresize&gt;
+  <br>
+  &lt;frame name=&quot;s2&quot; src=&quot;s2.htnl&quot;&gt;<br>
+  &lt;/frameset&gt;<br>
+  &lt;noframes&gt;<br>
+  &lt;body&gt;<br>
+  Tarayıcınız Çerçeve Özelliğini Desteklememektedir...<br>
+  &lt;/noframes&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;
+</div></center>
+<p><h3>İç İçe Çerçeve Oluşturma</h3>
+<p><em>&lt;frameset&gt; etiketi, aynı pencere içerisinde yatay ve dikey çerçeveleri birlikte  kullanmanıza olanak sağlar.</em></p>
+<p><strong>Örneğin:</strong></p>
+<center><div>&lt;html&gt;<br>
+&lt;head&gt;&lt;title&gt;İç İçe Frameset Örneği&lt;/title&gt;&lt;/head&gt;<br>
+&lt;frameset cols=&quot;30%,70%&quot;&gt;<br>
+&lt;frameset rows=&quot;100,*&quot;&gt;
+<br>
+&lt;frame name=&quot;s1&quot; src=&quot;s1.html&quot; scrolling=&quot;yes&quot; marginwidth=&quot;5&quot; marginheight=&quot;5&quot; noresize&gt; <br>
+&lt;frame name=&quot;s2&quot; src=&quot;s2.html&quot;&gt;<br>
+&lt;/frameset&gt;<br> 
+&lt;frame name=&quot;s3&quot; src=&quot;s3.html&quot;&gt;<br>
+&lt;/frameset&gt;
+<br>
+&lt;/html&gt; </div></center>
+<p><strong>Görünümü: <a href="css/icicecerceveornek.html">Görmek İçin Tıklayınız.</a></strong> (s1,s2 ve s3 dosyalarına renkler verilmiştir).</p>
+<p><h3>&lt;iframe&gt;</h3>
+<p><em>&lt;iframe&gt; etiketi, hazırlamakta olduğunuz sayfanın herhangi bir yerinde başka bir  sayfa veya doküman görüntülemek istediğiniz zaman kullanılabilen, bir iç çerçeve  oluşturmaya yarayan etikettir.</em></p>
+<center><table width="83%" height="414" border="2">
+  <tr>
+    <th scope="col">Kullanılabilecek Parametre</th>
+    <th scope="col">Görevi</th>
+  </tr>
+  <tr>
+    <td>HEIGHT </td>
+    <td>Çerçevenin yüksekliğini belirtmek için  kullanılır. </td>
+  </tr>
+  <tr>
+    <td>WIDTH </td>
+    <td>Çerçevenin genişliğini belirtmek için  kullanılır.</td>
+  </tr>
+  <tr>
+    <td>NAME </td>
+    <td>Çerçeveye isim vermek için kullanılır. </td>
+  </tr>
+  <tr>
+    <td>FRAMEBORDER</td>
+    <td>Çerçevenin kenarlığının olup olmayacağını  belirlemek için kullanılır.</td>
+  </tr>
+  <tr>
+    <td>SCROLLING </td>
+    <td>Çerçevede kaydırma çubuklarının kullanılıp  kullanılmayacağını belirlemek için  kullanılır.</td>
+  </tr>
+</table></center>
+<p><strong>Örneğin:</strong></p>
+<p><em>Aşağıdaki örnekte &lt;iframe&gt; etiketi kullanılarak, önceden hazırlanmış olan ornek.html  sayfasının içeriğinin genişliği 200, yüksekliği 100 olarak tanımlanmış olan ifreme içerisinde  görüntülenmesi sağlanmıştır.  </em></p>
+<center><div>&lt;html&gt;<br>
+  &lt;body bgcolor=&quot;maroon&quot;&gt;<br>
+  &lt;iframe name=&quot;ornek&quot; src=&quot;ornek.html&quot; width=&quot;200&quot; height=&quot;100&quot; scrolling=&quot;yes&quot;&gt;<br>
+  &lt;/iframe&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;
+</div></center>
+<p><strong>Görünümü:</strong> <a href="css/iframeornek1.html">Görmek İçin Tıklayınız. </a></p></p></td>
+
+ <td width="10%" height="1308">&nbsp;</td>
+
+    </tr>
+    <tr>
+    
+      <td height="157" bgcolor="#00FF33" colspan="3"> <div class="divenalt">
+        <p>&nbsp;</p>
+       <center> <p> Bu Bir Lise 11.Sınıf  Projesidir</p></center>
+        <center><p>Kullanım Şartları - Hakkımda - Gizlilik </p></center>
+       <center> <p>-----Batuhan Web Tasarım-----</p> </center>       
+       </div>        
+      <p>&nbsp;</p></td>
+      
+  </tr>
+</table>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
